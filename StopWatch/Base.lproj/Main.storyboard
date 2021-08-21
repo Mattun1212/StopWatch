@@ -72,10 +72,21 @@
                                     <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="DoI-Kl-aJf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9V6-Ij-iPN">
+                                <rect key="frame" x="107" y="139" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="A0X-Dt-V4M"/>
+                                    <constraint firstAttribute="width" constant="200" id="pbK-eL-D7E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8zW-4z-gtB" firstAttribute="top" secondItem="9V6-Ij-iPN" secondAttribute="bottom" constant="10" id="4Xh-fH-zFk"/>
                             <constraint firstItem="sEb-32-unk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dsh-oE-sep"/>
                             <constraint firstItem="mtS-kb-mGp" firstAttribute="top" secondItem="Qga-zB-fVm" secondAttribute="bottom" constant="30" id="INM-fm-ffZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sEb-32-unk" secondAttribute="bottom" constant="165" id="S67-48-HWF"/>
@@ -83,11 +94,13 @@
                             <constraint firstItem="mtS-kb-mGp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dk1-P8-DI8"/>
                             <constraint firstItem="sEb-32-unk" firstAttribute="top" secondItem="mtS-kb-mGp" secondAttribute="bottom" constant="30" id="lkC-OU-etP"/>
                             <constraint firstItem="8zW-4z-gtB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="s4r-wT-deZ"/>
+                            <constraint firstItem="9V6-Ij-iPN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSU-nA-mQe"/>
                             <constraint firstItem="Qga-zB-fVm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vXh-1I-seU"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="8zW-4z-gtB" id="8VO-jd-8fs"/>
+                        <outlet property="hanteilabel" destination="9V6-Ij-iPN" id="zoV-Y9-hGa"/>
+                        <outlet property="label" destination="8zW-4z-gtB" id="08I-EM-RRl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
